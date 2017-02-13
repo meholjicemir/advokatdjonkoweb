@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\IMG_9829_1000.jpg" />
+    <Content Include="Images\logo2.jpg" />
+    <Content Include="Libraries\lightSlider\lightslider.css" />
+    <Content Include="Libraries\lightSlider\lightslider.js" />
     <Content Include="packages.config" />
     <Content Include="Libraries\Bootstrap\css\bootstrap-theme.css.map" />
     <Content Include="Libraries\Bootstrap\css\bootstrap-theme.min.css.map" />

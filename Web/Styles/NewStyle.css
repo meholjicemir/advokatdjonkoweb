@@ -1,7 +1,7 @@
 ﻿body, html {
     height: 100%;
-    background-color: #5c3800;
-    color: #ffeabb;
+    background-color: #e9dbb4;
+    color: #40003f;
 }
 
 /* remove outer padding */
@@ -23,125 +23,39 @@ nav.sidebar, .main {
     transition: margin 200ms ease-out;
 }
 
-/* Add gap to nav and right windows.*/
-.main {
-    padding: 10px 10px 0 10px;
+
+.navbar-default {
+    border-bottom: 2px solid #40003f;
 }
 
-/* .....NavBar: Icon only with coloring/layout.....*/
+.navbar-nav li.active:after, .navbar-nav li.active:before {
+    bottom: 0%;
+    margin-bottom: -2px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
 
-/*small/medium side display*/
-@media (min-width: 768px) {
-
-    /*Allow main to be next to Nav*/
-    .main {
-        position: absolute;
-        width: calc(100% - 40px); /*keeps 100% minus nav size*/
-        margin-left: 40px;
-        float: right;
-    }
-
-    /*lets nav bar to be showed on mouseover*/
-    nav.sidebar:hover + .main {
-        margin-left: 200px;
-    }
-
-    /*Center Brand*/
-    nav.sidebar.navbar.sidebar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-        margin-left: 0px;
-    }
-    /*Center Brand*/
-    nav.sidebar .navbar-brand, nav.sidebar .navbar-header {
-        text-align: center;
-        width: 100%;
-        margin-left: 0px;
-    }
-
-    /*Center Icons*/
-    nav.sidebar a {
-        padding-right: 13px;
-    }
-
-    /*adds border top to first nav box */
-    nav.sidebar .navbar-nav > li:first-child {
-        border-top: 1px #5c3800 solid;
-    }
-
-    /*adds border to bottom nav boxes*/
-    nav.sidebar .navbar-nav > li {
-        border-bottom: 1px #5c3800 solid;
-    }
-
-    /* Colors/style dropdown box*/
-    nav.sidebar .navbar-nav .open .dropdown-menu {
-        position: static;
-        float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-
-    /*allows nav box to use 100% width*/
-    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid {
-        padding: 0 0px 0 0px;
-    }
-
-    /*gives sidebar width/height*/
-    nav.sidebar {
-        width: 200px;
-        height: 100%;
-        margin-left: -160px;
-        float: left;
-        z-index: 8000;
-        margin-bottom: 0px;
-    }
-
-        /*give sidebar 100% width;*/
-        nav.sidebar li {
-            width: 100%;
-        }
-
-        /* Move nav to full on mouse over*/
-        nav.sidebar:hover {
-            margin-left: 0px;
-        }
-    /*for hiden things when navbar hidden*/
-    .forAnimate {
-        opacity: 0;
+@media all and (min-width: 768px) {
+    .navbar-nav li.active:after {
+        border-bottom-color: #fff;
+        border-width: 6px;
+        margin-left: -6px;
+        z-index: 1;
     }
 }
 
-/* .....NavBar: Fully showing nav bar..... */
-
-@media (min-width: 1330px) {
-
-    /*Allow main to be next to Nav*/
-    .main {
-        width: calc(100% - 200px); /*keeps 100% minus nav size*/
-        margin-left: 200px;
+@media all and (min-width: 768px) {
+    .navbar-nav li.active:before {
+        border-bottom-color: #40003f;
+        border-width: 9px;
+        margin-left: -9px;
+        z-index: 1;
     }
-
-    /*Show all nav*/
-    nav.sidebar {
-        margin-left: 0px;
-        float: left;
-    }
-        /*Show hidden items on nav*/
-        nav.sidebar .forAnimate {
-            opacity: 1;
-        }
-}
-
-nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover, nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #840db7;
-    background-color: transparent;
-}
-
-nav:hover .forAnimate {
-    opacity: 1;
 }
 
 section {
@@ -163,126 +77,97 @@ section {
 }
 
 .container {
-    width: 90%;
-    margin-left: 0;
+    width: 100%;
+    margin: 0;
+    margin-top: -22px;
+    padding: 0;
 }
-
-@media (min-width: 768px) {
-    .container {
-        width: calc(100% - 60px);
-        margin-left: 50px;
-    }
-
-    .navbar {
-        position: absolute;
-    }
-
-    .current-title {
-        margin-left: 50px;
-    }
-}
-
-@media (min-width: 1330px) {
-    .container {
-        width: calc(100% - 210px);
-        margin-left: 200px;
-    }
-
-    .navbar {
-        position: absolute;
-    }
-
-    .current-title {
-        margin-left: 200px;
-    }
-}
-
 
 .navbar-default {
-    background-color: #f7c44f;
-    border-color: #5c3800;
+    background-color: #e9dbb4;
+    border-color: #40003f;
 }
 
     .navbar-default .navbar-brand {
-        color: #5c3800;
+        color: #40003f;
     }
 
         .navbar-default .navbar-brand:hover,
         .navbar-default .navbar-brand:focus {
-            color: #840db7;
+            color: #40003f;
             background-color: transparent;
         }
 
     .navbar-default .navbar-text {
-        color: #5c3800;
+        color: #40003f;
     }
 
     .navbar-default .navbar-nav > li > a {
-        color: #5c3800;
+        color: #40003f;
     }
 
         .navbar-default .navbar-nav > li > a:hover,
         .navbar-default .navbar-nav > li > a:focus {
-            color: #840db7;
+            color: #40003f;
             background-color: transparent;
         }
 
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:hover,
     .navbar-default .navbar-nav > .active > a:focus {
-        color: #840db7;
-        background-color: #5c3800;
+        color: #40003f;
+        background-color: #40003f;
     }
 
     .navbar-default .navbar-toggle {
-        background-color: #5c3800;
-        border-color: #5c3800;
+        background-color: #40003f;
+        border-color: #40003f;
     }
 
         .navbar-default .navbar-toggle:hover,
         .navbar-default .navbar-toggle:focus {
-            color: #840db7;
-            background-color: #f7c44f;
+            color: #40003f;
+            background-color: #eadcb5;
         }
 
         .navbar-default .navbar-toggle .icon-bar {
-            color: #5c3800;
-            background-color: #f7c44f;
+            color: #40003f;
+            background-color: #eadcb5;
         }
 
             .navbar-default .navbar-toggle .icon-bar:hover,
             .navbar-default .navbar-toggle .icon-bar:focus {
-                color: #840db7;
-                background-color: #5c3800;
+                color: #40003f;
+                background-color: #40003f;
             }
 
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
-        border-color: #5c3800;
+        border-color: #40003f;
     }
 
     .navbar-default .navbar-nav > .open > a,
     .navbar-default .navbar-nav > .open > a:hover,
     .navbar-default .navbar-nav > .open > a:focus {
-        color: #840db7;
-        background-color: #f7c44f;
+        color: #40003f;
+        background-color: #eadcb5;
     }
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #5c3800;
+        color: #40003f;
     }
 
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-            color: #840db7;
+            color: #40003f;
             background-color: transparent;
         }
 
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #840db7;
+        color: #40003f;
         background-color: #e7e7e7;
     }
 }
@@ -296,6 +181,11 @@ section {
 
 .single-screen {
     position: relative;
+    font-size: 1.5em;
+    padding: 5%;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #40003f;
 }
 
 .single-screen-dimmed {
@@ -304,17 +194,17 @@ section {
     position: absolute;
     height: 98%;
     width: 98%;
-    top: 1%;
+    top: 100px;
     left: 1%;
     background: rgba(247, 196, 79, 0.50);
-    border: 2px dotted #f7c44f;
+    border: 2px dotted #eadcb5;
     text-align: center;
     /*padding-top: 10%;*/
     align-content: center;
 }
 
 .circle-div {
-    border: 2px solid #f7c44f;
+    border: 2px solid #eadcb5;
     width: 200px;
     height: 200px;
     border-radius: 100px;
@@ -324,16 +214,51 @@ section {
     .circle-div:hover,
     .circle-div:focus {
         cursor: pointer;
-        border: 6px solid #840db7;
+        border: 6px solid #40003f;
     }
 
 
 .big-yellow-text {
     font-size: 5em;
     font-weight: bold;
-    color: #ffeabb;
+    color: #e9dbb4;
 }
 
 .font-streched {
     font-stretch: extra-expanded;
+}
+
+.img-fit {
+    object-fit: cover;
+}
+
+.smaller-text {
+    font-size: 1.3em;
+}
+
+
+.arrow-next-module {
+    font-size: 30px;
+    border: 2px solid #40003f;
+    border-radius: 9px;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.arrow-previous-module {
+    font-size: 30px;
+    border: 2px solid #40003f;
+    border-radius: 9px;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 90px;
+    right: 30px;
 }
