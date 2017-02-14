@@ -20,12 +20,19 @@
     <script src="Libraries/lightSlider/lightslider.js"></script>
 </head>
 <body>
-
-    <nav class="navbar navbar-default sidebar" role="navigation" style="padding: 0px; width: 100%; height: 100px;">
+    <div class="visible-xs" >
+        <img id="imgLogoXS" class="img-responsive" src="Images/logo2.jpg" alt="Logo" style="max-width: 180px; position: absolute; margin-left: 10px; margin-top: 10px; z-index: 1000;" />
+    </div>
+    <div style="position: absolute; right: 5%; z-index: 1000; margin-top: 10px;" class="row hidden-xs">
+        <div class="circle-div-small col-sm-4" style="background-image: url(Images/bosnian.png);"></div>
+        <div class="circle-div-small col-sm-4" style="background-image: url(Images/english.png);"></div>
+        <div class="circle-div-small col-sm-4" style="background-image: url(Images/german.png);"></div>
+    </div>
+    <nav class="navbar navbar-default sidebar" role="navigation" style="padding: 0px; width: 100%; height: 100px; z-index: 500;">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1" onclick="$('#imgLogoXS').slideToggle(); return false;">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -33,8 +40,8 @@
                 </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
-                <ul class="nav navbar-nav" style="padding-top: 50px;">
+            <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1" style="z-index: 1000;">
+                <ul class="nav navbar-nav" style="padding-top: 50px; background-color: #eadcb5; border: 0px;">
                     <li class="hidden-xs">
                         <div>
                             <img class="img-responsive" src="Images/logo2.jpg" alt="Logo" style="max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
@@ -81,12 +88,12 @@
             <li>
                 <img src="Images/IMG_9826_1000.jpg" class="img-fit" />
             </li>
-            <li>
+            <%--<li>
                 <img src="Images/IMG_9829_1000.jpg" class="img-fit" />
-            </li>
-            <li>
+            </li>--%>
+            <%--<li>
                 <img src="Images/IMG_9831_1000.jpg" class="img-fit" />
-            </li>
+            </li>--%>
         </ul>
     </div>
     <div id="divODrustvu" class="single-screen">
@@ -134,7 +141,8 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
             <span class="glyphicon glyphicon-chevron-down" onclick="ScrollToDiv('divDjelatnosti'); return false;"></span>
         </div>
     </div>
-    <div id="divDjelatnosti" class="single-screen">
+    <div id="divDjelatnosti" class="single-screen screen-with-background-img">
+        <img src="Images/IMG_9829_1000.jpg" class="img-fit" />
         <h1>DJELATNOSTI</h1>
         <br />
         <div style="text-align: left;">
@@ -175,7 +183,8 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
             <span class="glyphicon glyphicon-chevron-down" onclick="ScrollToDiv('divSrebrenica'); return false;"></span>
         </div>
     </div>
-    <div id="divSrebrenica" class="single-screen">
+    <div id="divSrebrenica" class="single-screen screen-with-background-img">
+        <img src="Images/srebrenica.jpg" class="img-fit" />
         <h1>SLUČAJ SREBRENICA</h1>
         <br />
         <span>1995. godine u mjestu Srebrenica u državi Bosni i Hercegovini, počinjen je genocid nad bošnjačkim stanovništvom od strane pripadnika srpske vojske, u kojem je stradalo preko 8000 civila, uprkos činjenici da je enklava Srebrenice proglašena zaštićenom zonom od strane Vijeća sigurnosti UN-a.</span>
@@ -195,10 +204,10 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
     </div>
     <div id="divKontakt" class="single-screen">
         <div class="row">
-            <div class="col-sm-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.763287736037!2d17.813294315555087!3d43.34014217913331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134b4306220c4fe5%3A0x48596236fb4d3829!2sBrki%C4%87a+4%2C+Mostar+88000!5e0!3m2!1sen!2sba!4v1486250900066" width="600" height="450" frameborder="2" style="border: 2px solid #40003f;" allowfullscreen></iframe>
+            <div class="col-lg-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1233.6439760441872!2d17.808150773168872!3d43.340915705867474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDIwJzI3LjMiTiAxN8KwNDgnMzIuOCJF!5e1!3m2!1sen!2sba!4v1487113122921" width="600" height="400" frameborder="2" style="border: 2px solid #40003f;" allowfullscreen></iframe>
             </div>
-            <div class="col-sm-7" style="text-align: left; font-size: 1.5em; padding-left: 50px;">
+            <div class="col-lg-7" style="text-align: left; font-size: 1.5em; padding-left: 50px;">
                 <span><strong>Advokatsko društvo Đonko d.o.o. Mostar</strong></span><br />
                 <br />
                 <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Bulevar Narodne Revolucije br. 35</span><br />

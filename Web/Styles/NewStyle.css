@@ -21,6 +21,7 @@ nav.sidebar, .main {
     -moz-transition: margin 200ms ease-out;
     -o-transition: margin 200ms ease-out;
     transition: margin 200ms ease-out;
+    font-size: 1.2em;
 }
 
 
@@ -138,7 +139,7 @@ section {
             .navbar-default .navbar-toggle .icon-bar:hover,
             .navbar-default .navbar-toggle .icon-bar:focus {
                 color: #40003f;
-                background-color: #40003f;
+                background-color: #eadcb5;
             }
 
     .navbar-default .navbar-collapse,
@@ -217,6 +218,21 @@ section {
         border: 6px solid #40003f;
     }
 
+.circle-div-small {
+    border: 2px solid #40003f;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-size: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+    .circle-div-small:hover,
+    .circle-div-small:focus {
+        cursor: pointer;
+        border: 4px solid #40003f;
+    }
 
 .big-yellow-text {
     font-size: 5em;
@@ -261,4 +277,23 @@ section {
     position: absolute;
     bottom: 90px;
     right: 30px;
+}
+
+
+.screen-with-background-img {
+    position: relative;
+    overflow: hidden;
+}
+
+    .screen-with-background-img img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+    }
+
+h1 {
+    font-weight: bold;
 }
