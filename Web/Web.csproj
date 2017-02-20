@@ -66,11 +66,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="Images\bosnian.png" />
     <Content Include="Images\english.png" />
     <Content Include="Images\german.png" />
     <Content Include="Images\IMG_9829_1000.jpg" />
+    <Content Include="Images\jasmina.jpg" />
     <Content Include="Images\logo2.jpg" />
+    <Content Include="Images\mensud.jpg" />
+    <Content Include="Images\mersad.jpg" />
     <Content Include="Images\srebrenica.jpg" />
     <Content Include="Libraries\lightSlider\lightslider.css" />
     <Content Include="Libraries\lightSlider\lightslider.js" />
@@ -83,6 +87,7 @@
     <Content Include="Libraries\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Libraries\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Libraries\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\DjonkoWebPublish.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -96,10 +101,6 @@
     <Content Include="Images\IMG_9826_1000.jpg" />
     <Content Include="Images\IMG_9831_1000.jpg" />
     <Content Include="Images\IMG_9832_1000.jpg" />
-    <Content Include="Images\Jasmina_g.jpg" />
-    <Content Include="Images\logo200.png" />
-    <Content Include="Images\Mensud_g.jpg" />
-    <Content Include="Images\Mersad_g.jpg" />
     <Content Include="Libraries\Bootstrap\css\bootstrap-theme.css" />
     <Content Include="Libraries\Bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Libraries\Bootstrap\css\bootstrap.css" />

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\CODE\AdvokatDjonko\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 03:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 21:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 21:19:46</publishTime>
+    </File>
+    <File Include="bin/Web.dll">
+      <publishTime>02/19/2017 23:56:38</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/19/2017 23:54:40</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>02/20/2017 00:47:09</publishTime>
+    </File>
+    <File Include="Home.aspx.js">
+      <publishTime>02/20/2017 00:40:22</publishTime>
+    </File>
+    <File Include="Images/bosnian.png">
+      <publishTime>02/15/2017 00:13:01</publishTime>
+    </File>
+    <File Include="Images/english.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/german.png">
+      <publishTime>02/15/2017 00:14:31</publishTime>
+    </File>
+    <File Include="Images/IMG_9826_1000.jpg">
+      <publishTime>02/05/2017 00:55:08</publishTime>
+    </File>
+    <File Include="Images/IMG_9829_1000.jpg">
+      <publishTime>02/14/2017 00:32:26</publishTime>
+    </File>
+    <File Include="Images/IMG_9831_1000.jpg">
+      <publishTime>02/05/2017 00:58:20</publishTime>
+    </File>
+    <File Include="Images/IMG_9832_1000.jpg">
+      <publishTime>02/05/2017 00:31:08</publishTime>
+    </File>
+    <File Include="Images/jasmina.jpg">
+      <publishTime>02/20/2017 00:39:07</publishTime>
+    </File>
+    <File Include="Images/Jasmina_g.jpg">
+      <publishTime>02/05/2017 01:38:21</publishTime>
+    </File>
+    <File Include="Images/logo2.jpg">
+      <publishTime>02/13/2017 21:07:47</publishTime>
+    </File>
+    <File Include="Images/logo200.png">
+      <publishTime>02/04/2017 23:25:18</publishTime>
+    </File>
+    <File Include="Images/mensud.jpg">
+      <publishTime>02/20/2017 00:39:25</publishTime>
+    </File>
+    <File Include="Images/Mensud_g.jpg">
+      <publishTime>02/05/2017 01:38:13</publishTime>
+    </File>
+    <File Include="Images/mersad.jpg">
+      <publishTime>02/20/2017 00:39:19</publishTime>
+    </File>
+    <File Include="Images/Mersad_g.jpg">
+      <publishTime>02/05/2017 01:38:01</publishTime>
+    </File>
+    <File Include="Images/srebrenica.jpg">
+      <publishTime>02/14/2017 23:42:22</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap-theme.css">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap.css">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap.css.map">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap.min.css">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/css/bootstrap.min.css.map">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/js/bootstrap.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/js/bootstrap.min.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/Bootstrap/js/npm.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/jQuery/jquery-1.12.0.min.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/jQuery/jquery-1.6.2.min.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/jQuery/jquery-ui.min.css">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/jQuery/jquery-ui.min.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="Libraries/lightSlider/lightslider.css">
+      <publishTime>02/13/2017 22:34:28</publishTime>
+    </File>
+    <File Include="Libraries/lightSlider/lightslider.js">
+      <publishTime>02/14/2017 00:30:45</publishTime>
+    </File>
+    <File Include="Libraries/moment.min.js">
+      <publishTime>02/02/2017 14:22:58</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/04/2017 23:09:17</publishTime>
+    </File>
+    <File Include="Scripts/Utilities.js">
+      <publishTime>02/02/2017 14:08:02</publishTime>
+    </File>
+    <File Include="Styles/NewStyle.css">
+      <publishTime>02/20/2017 00:25:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/19/2017 23:39:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
