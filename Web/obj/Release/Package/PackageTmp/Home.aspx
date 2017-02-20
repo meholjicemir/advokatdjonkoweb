@@ -26,7 +26,7 @@
 </head>
 <body>
     <div class="visible-xs">
-        <img id="imgLogoXS" class="img-responsive" src="Images/logo2.jpg" alt="Logo" style="max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
+        <img id="imgLogoXS" class="img-responsive" src="Images/logo2.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
     </div>
     <div class="arrow-scroll-top" id="divScrollToTop" onclick="ScrollToTop(); return false;">
         <span class="glyphicon glyphicon-chevron-up"></span>
@@ -53,7 +53,7 @@
                 <ul class="nav navbar-nav" style="padding-top: 50px; border: 0px;">
                     <li class="hidden-xs">
                         <div>
-                            <img id="imgLogoDesktop" class="img-responsive" src="Images/logo2.jpg" alt="Logo" style="max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
+                            <img id="imgLogoDesktop" class="img-responsive" src="Images/logo2.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
                         </div>
                     </li>
                     <li style="margin-left: 200px;" class="hidden-xs"><a href="#" onclick="ScrollToDiv('divPocetna'); return false;"><strong>POČETNA</strong></a></li>
@@ -180,7 +180,7 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
                 <img src="Images/srebrenica.jpg" style="visibility: hidden;" />
             </div>
         </div>
-        <div class="col-md-6 smallest-text" style="padding: 1%;">
+        <div class="col-md-6 smallest-text" style="padding: 3%;">
             <h1>SLUČAJ SREBRENICA</h1>
             <br />
             <span>1995. godine u mjestu Srebrenica u državi Bosni i Hercegovini, počinjen je genocid nad bošnjačkim stanovništvom od strane pripadnika srpske vojske, u kojem je stradalo preko 8000 civila, uprkos činjenici da je enklava Srebrenice proglašena zaštićenom zonom od strane Vijeća sigurnosti UN-a.</span>
