@@ -13,13 +13,13 @@
 
     <link rel="stylesheet" href="Libraries/Bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="Libraries/jQuery/jquery-ui.min.css" />
-    <link rel="stylesheet" href="Styles/NewStyle.css" />
+    <link rel="stylesheet" href="Styles/NewStyle.css?v=4" />
     <script type="text/javascript" src="Libraries/jQuery/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="Libraries/jQuery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="Libraries/Bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="Scripts/Utilities.js?v=2"></script>
-    <script type="text/javascript" src="Home.aspx.js?v=2" defer="defer"></script>
+    <script type="text/javascript" src="Home.aspx.js?v=4" defer="defer"></script>
 
     <link type="text/css" rel="stylesheet" href="Libraries/lightSlider/lightslider.css" />
     <script src="Libraries/lightSlider/lightslider.js"></script>
@@ -32,10 +32,10 @@
         <span class="glyphicon glyphicon-chevron-up"></span>
         <span id="spanScrollToTop" style="display: none; font-size: 1em;">Povratak na početak</span>
     </div>
-    <div style="position: absolute; right: 5%; z-index: 1000; margin-top: 5px; position: fixed;" class="row hidden-xs">
-        <div class="circle-div-small col-sm-4" style="background-image: url(Images/bosnian.png);"></div>
-        <div class="circle-div-small col-sm-4" style="background-image: url(Images/english.png);"></div>
-        <div class="circle-div-small col-sm-4" style="background-image: url(Images/german.png);"></div>
+    <div style="right: 1.5%; font-size: 0.9em; color: #40003f; position: fixed; z-index: 600; cursor: pointer;" class="hidden-xs">
+        <img src="Images/bosnian.png" height="17" width="22" alt="BiH" />
+        <img src="Images/english.png" height="17" width="22" alt="ENG" />
+        <img src="Images/german.png" height="17" width="22" alt="DEU" />
     </div>
     <nav id="navBar" class="navbar navbar-default sidebar" role="navigation" style="padding: 0px; width: 100%; height: 103px; z-index: 500; position: fixed;">
         <div class="container-fluid">
@@ -50,7 +50,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1" style="background-color: #fff8e8; z-index: 500;">
-                <ul class="nav navbar-nav" style="padding-top: 50px; border: 0px;">
+                <ul id="ulMenu" class="nav navbar-nav" style="padding-top: 50px; border: 0px; position: relative;">
                     <li class="hidden-xs">
                         <div>
                             <img id="imgLogoDesktop" class="img-responsive" src="Images/logo2.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
@@ -107,13 +107,13 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
         </div>
     </div>
     <div id="divMensud" class="single-screen row">
-        <div class="col-md-6 full-height">
+        <div class="col-md-6 full-height hidden-xs">
             <div class="img-fit-div img-fit full-height" style="background-image: url(Images/mensud.jpg); background-size: cover;">
                 <img src="Images/mensud.jpg" style="visibility: hidden;" />
             </div>
         </div>
         <div class="col-md-6 text-with-padding">
-            <h1>Mensud Đonko</h1>
+            <h1>Advokat Mensud Đonko</h1>
             <br />
             <span>Mensud Đonko je rođen 1952. godine u Čapljini. Pravni studij je završio na Pravnom fakultetu u Sarajevu, gdje je diplomirao 1975. godine. Pravosudni ispit završava u Sarajevu 1984. godine, gdje jenakon toga položio i advokatski ispit. Radio je kao direktor općeg i pravnog sektora preduzeća "Lasta-Zvečevo d.d." u Čapljini sve do 1987. godine, nakon čega otvara svoju advokatsku kancelariju. 1998. godine advokatsku kancelariju premješta iz Čapljine u Mostar, gdje sve do danas radi. 2016. godine osniva Advokatsko društvo Đonko d.o.o. Mostar.
                     <br />
@@ -121,29 +121,44 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
                 Advokat je kroz te godine bio uključen u razne dodatne projekte, od priređivanja multimedijalnog izdanja "Sudska praksa u BiH", do pokretanja jednog od najznačajnijih građanskih postupaka naknade štete u međunarodnom pravu za BiH: Slučaj Srebrenica. Obnašao je i funkciju predsjednika upravnog odbora Regionalne advokatske komore Hercegovačko-Neretvanskog Kantona.
             </span>
         </div>
+        <div class="col-md-6 full-height visible-xs">
+            <div class="img-fit-div img-fit full-height" style="background-image: url(Images/mensud_mob.jpg); background-size: cover;">
+                <img src="Images/mensud_mob.jpg" style="visibility: hidden;" />
+            </div>
+        </div>
     </div>
     <div id="divMersad" class="single-screen row">
         <div class="col-md-6 text-with-padding">
-            <h1>Mersad Đonko</h1>
+            <h1>Advokat Mersad Đonko</h1>
             <br />
             <span>Mersad Đonko rođen je 1987. godine u Čapljini. Pravni studij je završio na Pravnom fakultetu u Sarajevu, gdje je diplomirao 2010. godine. Master studij iz oblasti „Građansko pravo u Evropskoj uniji“ završava 2013. godine. Pravosudni ispit završava u Sarajevu 2014. godine, te je nakon toga položio advokatski ispit u 2015. godini. Govori tečno engleski i njemački jezik.</span>
         </div>
-        <div class="col-md-6 full-height">
+        <div class="col-md-6 full-height hidden-xs">
             <div class="img-fit-div img-fit full-height" style="background-image: url(Images/mersad.jpg); background-size: cover;">
                 <img src="Images/mersad.jpg" style="visibility: hidden;" />
             </div>
         </div>
+        <div class="col-md-6 full-height visible-xs">
+            <div class="img-fit-div img-fit full-height" style="background-image: url(Images/mersad_mob.jpg); background-size: cover;">
+                <img src="Images/mersad_mob.jpg" style="visibility: hidden;" />
+            </div>
+        </div>
     </div>
     <div id="divJasmina" class="single-screen row">
-        <div class="col-md-6 full-height">
+        <div class="col-md-6 full-height hidden-xs">
             <div class="img-fit-div img-fit full-height" style="background-image: url(Images/jasmina.jpg); background-size: cover;">
                 <img src="Images/jasmina.jpg" style="visibility: hidden;" />
             </div>
         </div>
         <div class="col-md-6 text-with-padding">
-            <h1>Jasmina Đonko</h1>
+            <h1>Advokat Jasmina Đonko</h1>
             <br />
             <span>Jasmina Đonko rođena je 1989. godine u Čapljini. Pravni studij je završila na Pravnom fakultetu u Sarajevu, gdje je diplomirala 2011. godine. Master studij iz oblasti „Građansko pravo u Evropskoj uniji“ završava 2013. godine. Pravosudni ispit završava u Sarajevu 2014. godine, te je nakon toga položila advokatski ispit u 2016. godini. Govori tečno engleski i njemački jezik.</span>
+        </div>
+        <div class="col-md-6 full-height visible-xs">
+            <div class="img-fit-div img-fit full-height" style="background-image: url(Images/jasmina_mob.jpg); background-size: cover;">
+                <img src="Images/jasmina_mob.jpg" style="visibility: hidden;" />
+            </div>
         </div>
     </div>
     <div id="divDjelatnosti" class="single-screen row">
@@ -175,7 +190,7 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
         </div>
     </div>
     <div id="divSrebrenica" class="single-screen row">
-        <div class="col-md-6 full-height">
+        <div class="col-md-6 full-height hidden-xs">
             <div class="img-fit-div img-fit full-height" style="background-image: url(Images/srebrenica.jpg); background-size: cover;">
                 <img src="Images/srebrenica.jpg" style="visibility: hidden;" />
             </div>
@@ -192,12 +207,19 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
             <span>Prvostepenom presudom iz 2014. godine holandski sud presudio je u korist tužitelja utvrdivši da je postojala odgovornost države Holandije za smrt jednog dijela civila koji su se nalazili u zaštićenoj zoni, jer su pripadnici Dutchbat-a iz zaštićene zone UN-a izbacili civile i predali ih srpskoj vojsci, koji su ih zatim ubili. Ovo je bila historijska presuda  jer je prvi put jedna država koja je bila u misiji pod okriljem UN-a proglašena odgovornom za stradanje civila u zaštićenoj zoni. Na prvostepenu presudu obe strane su izjavile žalbu, te se ishod po žalbi trenutno očekuje.</span>
             <br />
         </div>
+        <div class="col-md-6 full-height visible-xs">
+            <div class="img-fit-div img-fit full-height" style="background-image: url(Images/srebrenica.jpg); background-size: cover;">
+                <img src="Images/srebrenica.jpg" style="visibility: hidden;" />
+            </div>
+        </div>
     </div>
     <div id="divKontakt" class=" single-screen row" style="padding-top: 1%;">
-        <div class="col-md-5" style="padding: 3%;">
+        <div class="col-md-6" style="padding: 3%;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1233.6439760441872!2d17.808150773168872!3d43.340915705867474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDIwJzI3LjMiTiAxN8KwNDgnMzIuOCJF!5e1!3m2!1sen!2sba!4v1487113122921" width="550" height="400" frameborder="2" style="border: 2px solid #40003f;" allowfullscreen></iframe>
         </div>
-        <div class="col-md-4 smallest-text" style="text-align: left; padding: 3%;">
+        <div class="col-md-6 smallest-text" style="text-align: left; padding: 3%;">
+            <h1>KONTAKT</h1>
+            <br />
             <span><strong>Advokatsko društvo Đonko d.o.o. Mostar</strong></span><br />
             <br />
             <span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>Bulevar Narodne Revolucije br. 35</span><br />
@@ -209,18 +231,38 @@ Bavimo se raznim poljima prava, iako je naš uži specijalitet naknada štete. M
             <br />
             <span><strong>Radno vrijeme:</strong></span><br />
             <span>Ponedjeljak - Petak, 8:00 - 16:00 </span>
-        </div>
-        <div class="col-md-3 smallest-text" style="padding: 3%; text-align: left;">
-            <span><strong>Kontaktirajte nas:</strong></span>
             <br />
             <br />
-            <input id="txtName" type="text" class="form-control" placeholder="Ime i prezime" />
-            <input id="txtEmail" type="email" class="form-control" placeholder="Email adresa" />
-            <input id="txtPhone" type="text" class="form-control" placeholder="Broj telefona" />
-            <br />
-            <textarea id="txtMessage" rows="6" class="form-control" placeholder="Tekst poruke"></textarea>
-            <br />
-            <button id="btnSend" class="form-control btn btn-success" onclick="alert('Uskoro!');"><strong>Pošalji</strong></button>
+            <span><strong>Kontaktirajte nas:</strong></span><br />
+            <?php
+				if ((isset($_POST['txtEmail']) ? $_POST['txtEmail'] : '') <> '') {
+					$ToEmail = 'web@advokatdonko.ba';
+					$EmailSubject = 'Poruka sa web stranice';
+					$mailheader = "From: web@advokatdonko.ba\r\n";
+					$mailheader .= "Reply-To: web@advokatdonko.ba\r\n";
+					$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n";
+					$MESSAGE_BODY = "Ime i prezime: ".$_POST["txtName"]."".nl2br("\r\n");
+					$MESSAGE_BODY .= "Email: ".$_POST["txtEmail"]."".nl2br("\r\n");
+					$MESSAGE_BODY .= "Telefon: ".$_POST["txtPhone"]."".nl2br("\r\n");
+					$MESSAGE_BODY .= "Poruka: ".nl2br($_POST["txtMessage"])."";
+					mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure");
+			?>
+			<span>Poruka poslana.</span>
+			<?php
+				} else {
+			?>
+            <form action="Home.php#divKontakt" method="post">
+                <input id="txtName" name="txtName" type="text" class="form-control" placeholder="Ime i prezime" />
+                <input id="txtEmail" name="txtEmail" type="email" class="form-control" placeholder="Email adresa" />
+                <input id="txtPhone" name="txtPhone" type="text" class="form-control" placeholder="Broj telefona" />
+                <br />
+                <textarea id="txtMessage" name="txtMessage" rows="6" class="form-control" placeholder="Tekst poruke"></textarea>
+                <br />
+                <input type="submit" id="btnSend" class="form-control btn btn-success" style="max-width: 200px;" value="Pošalji" />
+            </form>
+			<?php 
+				}; 
+			?>
         </div>
     </div>
     <div class="pull-right" style="margin-right: 30px; font-size: 0.8em; color: #40003f;"><a style="color: #40003f !important;" href="mailto:meholjic.emir@gmail.com"><strong>2017 © EM</strong></a></div>

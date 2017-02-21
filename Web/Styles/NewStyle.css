@@ -39,6 +39,9 @@ nav.sidebar, .main {
 
 
 .navbar-default {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
     border-bottom: 2px solid #40003f;
 }
 
@@ -122,8 +125,8 @@ section {
 
         .navbar-default .navbar-nav > li > a:hover,
         .navbar-default .navbar-nav > li > a:focus {
-            color: #40003f;
-            background-color: transparent;
+            color: #fff8e8;
+            background-color: #40003f;
         }
 
     .navbar-default .navbar-nav > .active > a,
@@ -197,7 +200,7 @@ section {
     /*position: relative;*/
     font-size: 1.5em;
     /*padding: 5%;*/
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     border: 2px solid #40003f;
     min-height: 100%;
@@ -274,4 +277,8 @@ h1 {
     border: 1px solid #40003f;
     padding: 5px;
     display: none;
+}
+
+#navBar {
+    opacity: 0.9;
 }

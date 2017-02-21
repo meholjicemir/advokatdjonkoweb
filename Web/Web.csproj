@@ -72,9 +72,12 @@
     <Content Include="Images\german.png" />
     <Content Include="Images\IMG_9829_1000.jpg" />
     <Content Include="Images\jasmina.jpg" />
+    <Content Include="Images\jasmina_mob.jpg" />
     <Content Include="Images\logo2.jpg" />
     <Content Include="Images\mensud.jpg" />
+    <Content Include="Images\mensud_mob.jpg" />
     <Content Include="Images\mersad.jpg" />
+    <Content Include="Images\mersad_mob.jpg" />
     <Content Include="Images\srebrenica.jpg" />
     <Content Include="Libraries\lightSlider\lightslider.css" />
     <Content Include="Libraries\lightSlider\lightslider.js" />
@@ -113,7 +116,6 @@
     <Content Include="Libraries\jQuery\jquery-1.6.2.min.js" />
     <Content Include="Libraries\jQuery\jquery-ui.min.css" />
     <Content Include="Libraries\jQuery\jquery-ui.min.js" />
-    <Content Include="Libraries\moment.min.js" />
     <Content Include="Scripts\Utilities.js" />
     <Content Include="Styles\NewStyle.css" />
     <Content Include="Web.config" />

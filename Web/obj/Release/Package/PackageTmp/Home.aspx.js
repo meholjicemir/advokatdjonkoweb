@@ -48,6 +48,11 @@
 
     //$(".single-screen").css("min-height", $(window).height());
     $(".full-height").css("min-height", $(window).height());
+
+    var menuLoc = ($("#ulMenu").parent().width() - $("#ulMenu").width() - 180) / 2;
+    if (menuLoc < 0)
+        menuLoc = 0;
+    $("#ulMenu").css("left", menuLoc);
 });
 
 function ScrollToDiv(divId) {
@@ -85,6 +90,10 @@ $(document).scroll(function () {
     $("#navBar").css("margin-top", tempMarginTopNavBar.toString() + "px");
 
     var tempMarginTopLogoMob = -$(document).scrollTop();
+
+    if ($("#bs-sidebar-navbar-collapse-1").hasClass("in"))
+        tempMarginTopLogoMob -= 104;
+
     if (tempMarginTopLogoMob < -154)
         tempMarginTopLogoMob = -154;
 

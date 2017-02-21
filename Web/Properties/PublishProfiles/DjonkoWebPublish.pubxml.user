@@ -49,61 +49,70 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 21:19:46</publishTime>
     </File>
     <File Include="bin/Web.dll">
-      <publishTime>02/19/2017 23:56:38</publishTime>
+      <publishTime>02/21/2017 01:12:58</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>02/19/2017 23:54:40</publishTime>
     </File>
     <File Include="Home.aspx">
-      <publishTime>02/20/2017 01:14:01</publishTime>
+      <publishTime>02/21/2017 01:12:35</publishTime>
     </File>
     <File Include="Home.aspx.js">
-      <publishTime>02/20/2017 00:40:22</publishTime>
+      <publishTime>02/20/2017 23:47:08</publishTime>
     </File>
     <File Include="Images/bosnian.png">
       <publishTime>02/15/2017 00:13:01</publishTime>
     </File>
     <File Include="Images/english.png">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>02/20/2017 22:51:09</publishTime>
     </File>
     <File Include="Images/german.png">
       <publishTime>02/15/2017 00:14:31</publishTime>
     </File>
     <File Include="Images/IMG_9826_1000.jpg">
-      <publishTime>02/05/2017 00:55:08</publishTime>
+      <publishTime>02/20/2017 22:26:05</publishTime>
     </File>
     <File Include="Images/IMG_9829_1000.jpg">
-      <publishTime>02/14/2017 00:32:26</publishTime>
+      <publishTime>02/20/2017 22:26:07</publishTime>
     </File>
     <File Include="Images/IMG_9831_1000.jpg">
-      <publishTime>02/05/2017 00:58:20</publishTime>
+      <publishTime>02/20/2017 22:26:04</publishTime>
     </File>
     <File Include="Images/IMG_9832_1000.jpg">
-      <publishTime>02/05/2017 00:31:08</publishTime>
+      <publishTime>02/20/2017 22:26:05</publishTime>
     </File>
     <File Include="Images/jasmina.jpg">
-      <publishTime>02/20/2017 00:39:07</publishTime>
+      <publishTime>02/20/2017 22:26:12</publishTime>
     </File>
     <File Include="Images/Jasmina_g.jpg">
       <publishTime>02/05/2017 01:38:21</publishTime>
     </File>
+    <File Include="Images/jasmina_mob.jpg">
+      <publishTime>02/20/2017 23:27:04</publishTime>
+    </File>
     <File Include="Images/logo2.jpg">
-      <publishTime>02/13/2017 21:07:47</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Images/logo200.png">
       <publishTime>02/04/2017 23:25:18</publishTime>
     </File>
     <File Include="Images/mensud.jpg">
-      <publishTime>02/20/2017 00:39:25</publishTime>
+      <publishTime>02/20/2017 22:26:13</publishTime>
     </File>
     <File Include="Images/Mensud_g.jpg">
       <publishTime>02/05/2017 01:38:13</publishTime>
     </File>
+    <File Include="Images/mensud_mob.jpg">
+      <publishTime>02/20/2017 23:26:33</publishTime>
+    </File>
     <File Include="Images/mersad.jpg">
-      <publishTime>02/20/2017 00:39:19</publishTime>
+      <publishTime>02/20/2017 22:26:11</publishTime>
     </File>
     <File Include="Images/Mersad_g.jpg">
       <publishTime>02/05/2017 01:38:01</publishTime>
+    </File>
+    <File Include="Images/mersad_mob.jpg">
+      <publishTime>02/20/2017 23:26:27</publishTime>
     </File>
     <File Include="Images/srebrenica.jpg">
       <publishTime>02/14/2017 23:42:22</publishTime>
@@ -184,7 +193,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/02/2017 14:08:02</publishTime>
     </File>
     <File Include="Styles/NewStyle.css">
-      <publishTime>02/20/2017 00:25:24</publishTime>
+      <publishTime>02/20/2017 23:13:50</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>02/19/2017 23:39:35</publishTime>
