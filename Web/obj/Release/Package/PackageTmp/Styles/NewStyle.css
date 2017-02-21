@@ -282,3 +282,12 @@ h1 {
 #navBar {
     opacity: 0.9;
 }
+
+
+.lang-eng {
+    display: none;
+}
+
+.lang-deu {
+    display: none;
+}

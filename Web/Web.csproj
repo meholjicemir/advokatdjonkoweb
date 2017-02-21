@@ -71,6 +71,8 @@
     <Content Include="Images\english.png" />
     <Content Include="Images\german.png" />
     <Content Include="Images\IMG_9829_1000.jpg" />
+    <Content Include="Images\IMG_9829_1000_mob.jpg" />
+    <Content Include="Images\IMG_9831_1000_mob.jpg" />
     <Content Include="Images\jasmina.jpg" />
     <Content Include="Images\jasmina_mob.jpg" />
     <Content Include="Images\logo2.jpg" />
@@ -79,6 +81,7 @@
     <Content Include="Images\mersad.jpg" />
     <Content Include="Images\mersad_mob.jpg" />
     <Content Include="Images\srebrenica.jpg" />
+    <Content Include="Images\srebrenica_mob.jpg" />
     <Content Include="Libraries\lightSlider\lightslider.css" />
     <Content Include="Libraries\lightSlider\lightslider.js" />
     <Content Include="packages.config" />

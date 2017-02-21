@@ -64,6 +64,8 @@ function ScrollToDiv(divId) {
 }
 
 function ScrollToTop() {
+    $("#bs-sidebar-navbar-collapse-1").removeClass("in");
+
     $('html,body').animate({
         scrollTop: 0
     }, 'slow');
@@ -127,3 +129,49 @@ $(".djelatnost").on("mouseenter", function () {
 $(".djelatnost").on("click", function () {
     $("#divDjelatnostiDetails").html('<strong>' + $(this).html() + ':</strong> <br>' + $(this).attr("details")).slideDown();
 });
+
+function SetLang(langNo) {
+    switch (langNo) {
+        case 1:
+            // bih
+            $(".lang-eng").hide();
+            $(".lang-deu").hide();
+            $(".lang-bih").show();
+
+            $("#txtName").attr("placeholder", "Ime i prezime");
+            $("#txtEmail").attr("placeholder", "Email adresa");
+            $("#txtPhone").attr("placeholder", "Broj telefona");
+            $("#txtMessage").attr("placeholder", "Tekst poruke");
+            $("#btnSend").attr("value", "Pošalji");
+            break;
+        case 2:
+            // eng
+            $(".lang-deu").hide();
+            $(".lang-bih").hide();
+            $(".lang-eng").show();
+
+            $("#txtName").attr("placeholder", "Full name");
+            $("#txtEmail").attr("placeholder", "Email address");
+            $("#txtPhone").attr("placeholder", "Phone number");
+            $("#txtMessage").attr("placeholder", "Message text");
+            $("#btnSend").attr("value", "Send");
+            break;
+        case 3:
+            // deu
+            $(".lang-eng").hide();
+            $(".lang-bih").hide();
+            $(".lang-deu").show();
+
+            $("#txtName").attr("placeholder", "Vollständiger Name");
+            $("#txtEmail").attr("placeholder", "E-Mail-Addresse");
+            $("#txtPhone").attr("placeholder", "Telefonnummer");
+            $("#txtMessage").attr("placeholder", "Nachrichtentext");
+            $("#btnSend").attr("value", "Senden");
+            break;
+    }
+
+
+    // other setup
+    $("#divDjelatnostiDetails").html("");
+    $("#bs-sidebar-navbar-collapse-1").removeClass("in");
+}
