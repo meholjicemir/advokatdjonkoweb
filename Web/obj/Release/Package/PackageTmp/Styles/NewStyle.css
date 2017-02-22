@@ -291,3 +291,24 @@ h1 {
 .lang-deu {
     display: none;
 }
+
+.dropdown-menu {
+    background-color: #fff8e8 !important;
+}
+
+    .dropdown-menu > li > a {
+        font-size: 1.1em;
+        color: #40003f !important;
+        background-color: #fff8e8 !important;
+    }
+
+        .dropdown-menu > li > a:hover {
+            color: #fff8e8 !important;
+            background-color: #40003f !important;
+        }
+
+
+a.current_menu {
+    color: #fff8e8 !important;
+    background-color: #40003f !important;
+}

@@ -49,16 +49,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 21:19:46</publishTime>
     </File>
     <File Include="bin/Web.dll">
-      <publishTime>02/21/2017 23:43:03</publishTime>
+      <publishTime>02/22/2017 21:11:12</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>02/19/2017 23:54:40</publishTime>
     </File>
     <File Include="Home.aspx">
-      <publishTime>02/21/2017 23:57:01</publishTime>
+      <publishTime>02/22/2017 22:54:56</publishTime>
     </File>
     <File Include="Home.aspx.js">
-      <publishTime>02/21/2017 23:29:09</publishTime>
+      <publishTime>02/22/2017 22:53:39</publishTime>
     </File>
     <File Include="Images/bosnian.png">
       <publishTime>02/15/2017 00:13:01</publishTime>
@@ -68,6 +68,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/german.png">
       <publishTime>02/15/2017 00:14:31</publishTime>
+    </File>
+    <File Include="Images/IMG_5.jpg">
+      <publishTime>02/22/2017 22:54:45</publishTime>
+    </File>
+    <File Include="Images/IMG_5_mob.jpg">
+      <publishTime>02/22/2017 22:54:31</publishTime>
     </File>
     <File Include="Images/IMG_9826_1000.jpg">
       <publishTime>02/20/2017 22:26:05</publishTime>
@@ -101,6 +107,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/logo200.png">
       <publishTime>02/04/2017 23:25:18</publishTime>
+    </File>
+    <File Include="Images/logo_bih.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/logo_deu.jpg">
+      <publishTime>02/22/2017 10:50:55</publishTime>
+    </File>
+    <File Include="Images/logo_eng.jpg">
+      <publishTime>02/22/2017 10:50:55</publishTime>
     </File>
     <File Include="Images/mensud.jpg">
       <publishTime>02/20/2017 22:26:13</publishTime>
@@ -202,7 +217,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/02/2017 14:08:02</publishTime>
     </File>
     <File Include="Styles/NewStyle.css">
-      <publishTime>02/21/2017 23:56:53</publishTime>
+      <publishTime>02/22/2017 21:37:20</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>02/19/2017 23:39:35</publishTime>

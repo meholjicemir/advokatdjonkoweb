@@ -70,12 +70,16 @@
     <Content Include="Images\bosnian.png" />
     <Content Include="Images\english.png" />
     <Content Include="Images\german.png" />
+    <Content Include="Images\IMG_5.jpg" />
+    <Content Include="Images\IMG_5_mob.jpg" />
     <Content Include="Images\IMG_9829_1000.jpg" />
     <Content Include="Images\IMG_9829_1000_mob.jpg" />
     <Content Include="Images\IMG_9831_1000_mob.jpg" />
     <Content Include="Images\jasmina.jpg" />
     <Content Include="Images\jasmina_mob.jpg" />
-    <Content Include="Images\logo2.jpg" />
+    <Content Include="Images\logo_bih.jpg" />
+    <Content Include="Images\logo_deu.jpg" />
+    <Content Include="Images\logo_eng.jpg" />
     <Content Include="Images\mensud.jpg" />
     <Content Include="Images\mensud_mob.jpg" />
     <Content Include="Images\mersad.jpg" />

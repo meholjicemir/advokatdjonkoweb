@@ -19,14 +19,16 @@
     <script type="text/javascript" src="Libraries/Bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="Scripts/Utilities.js"></script>
-    <script type="text/javascript" src="Home.aspx.js?v=5" defer="defer"></script>
+    <script type="text/javascript" src="Home.aspx.js?v=9" defer="defer"></script>
 
     <link type="text/css" rel="stylesheet" href="Libraries/lightSlider/lightslider.css" />
     <script src="Libraries/lightSlider/lightslider.js"></script>
 </head>
 <body>
     <div class="visible-xs">
-        <img id="imgLogoXS" class="img-responsive" src="Images/logo2.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
+        <img class="img-responsive imgLogoXS lang-bih" src="Images/logo_bih.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
+        <img class="img-responsive imgLogoXS lang-eng" src="Images/logo_eng.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
+        <img class="img-responsive imgLogoXS lang-deu" src="Images/logo_deu.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
     </div>
     <div class="arrow-scroll-top" id="divScrollToTop" onclick="ScrollToTop(); return false;">
         <span class="glyphicon glyphicon-chevron-up"></span>
@@ -57,26 +59,28 @@
                 <ul id="ulMenu" class="nav navbar-nav" style="padding-top: 50px; border: 0px; position: relative;">
                     <li class="hidden-xs">
                         <div>
-                            <img id="imgLogoDesktop" class="img-responsive" src="Images/logo2.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
+                            <img class="img-responsive imgLogoDesktop lang-bih" src="Images/logo_bih.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
+                            <img class="img-responsive imgLogoDesktop lang-eng" src="Images/logo_eng.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
+                            <img class="img-responsive imgLogoDesktop lang-deu" src="Images/logo_deu.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-top: -50px; z-index: 1000;" />
                         </div>
                     </li>
-                    <li style="margin-left: 200px;" class="hidden-xs"><a href="#" onclick="ScrollToTop(); return false;">
+                    <li style="margin-left: 200px;" class="hidden-xs"><a class="menu-item aPocetna" href="#" onclick="ScrollToTop(); return false;">
                         <strong class="lang-bih">POČETNA</strong>
                         <strong class="lang-eng">HOME</strong>
                         <strong class="lang-deu">START</strong>
                     </a></li>
-                    <li class="visible-xs"><a href="#">
+                    <li class="visible-xs"><a class="menu-item aPocetna" href="#">
                         <strong class="lang-bih">POČETNA</strong>
                         <strong class="lang-eng">HOME</strong>
                         <strong class="lang-deu">START</strong>
                                            </a></li>
-                    <li><a href="#" onclick="ScrollToDiv('divODrustvu'); return false;">
+                    <li><a class="menu-item aODrustvu" href="#" onclick="ScrollToDiv('divODrustvu'); return false;">
                         <strong class="lang-bih">O DRUŠTVU</strong>
                         <strong class="lang-eng">ABOUT THE LAW FIRM</strong>
                         <strong class="lang-deu">ÜBER UNS</strong>
                         </a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="#" class="dropdown-toggle menu-item aClanovi" data-toggle="dropdown">
                             <strong class="lang-bih">ČLANOVI KANCELARIJE</strong>
                             <strong class="lang-eng">ATTORNEYS</strong>
                             <strong class="lang-deu">MITGLIEDER DER KANZELEI</strong>
@@ -99,17 +103,17 @@
                                 </a></li>
                         </ul>
                     </li>
-                    <li><a href="#" onclick="ScrollToDiv('divDjelatnosti'); return false;">
+                    <li><a class="menu-item aDjelatnosti" href="#" onclick="ScrollToDiv('divDjelatnosti'); return false;">
                         <strong class="lang-bih">DJELATNOSTI</strong>
                         <strong class="lang-eng">FIELDS OF EXPERTISE</strong>
                         <strong class="lang-deu">FACHGEBIETE</strong>
                         </a></li>
-                    <li><a href="#" onclick="ScrollToDiv('divSrebrenica'); return false;">
+                    <li><a class="menu-item aSrebrenica" href="#" onclick="ScrollToDiv('divSrebrenica'); return false;">
                         <strong class="lang-bih">SLUČAJ SREBRENICA</strong>
                         <strong class="lang-eng">CASE SREBRENICA</strong>
                         <strong class="lang-deu">DER FALL SREBRENICA</strong>
                         </a></li>
-                    <li><a href="#" onclick="ScrollToDiv('divKontakt'); return false;">
+                    <li><a class="menu-item aKontakt" href="#" onclick="ScrollToDiv('divKontakt'); return false;">
                         <strong class="lang-bih">KONTAKT</strong>
                         <strong class="lang-eng">CONTACT</strong>
                         <strong class="lang-deu">KONTAKT</strong>
@@ -137,8 +141,8 @@
     </div>
     <div id="divODrustvu" class="single-screen row">
         <div class="col-md-6 visible-xs">
-            <div class="img-fit-div img-fit" style="background-image: url(Images/IMG_9831_1000_mob.jpg); background-size: cover;">
-                <img src="Images/IMG_9831_1000_mob.jpg" style="visibility: hidden;" />
+            <div class="img-fit-div img-fit" style="background-image: url(Images/IMG_5_mob.jpg); background-size: cover;">
+                <img src="Images/IMG_5_mob.jpg" style="visibility: hidden;" />
             </div>
         </div>
         <div class="col-md-6 text-with-padding">
@@ -162,8 +166,8 @@
             </span>
         </div>
         <div class="col-md-6 full-height hidden-xs">
-            <div class="img-fit-div img-fit full-height" style="background-image: url(Images/IMG_9831_1000.jpg); background-size: cover;">
-                <img src="Images/IMG_9831_1000.jpg" style="visibility: hidden;" />
+            <div id="divImgODrustvu" class="img-fit-div img-fit full-height" style="background-image: url(Images/IMG_5.jpg); background-size: cover;">
+                <img src="Images/IMG_5.jpg" style="visibility: hidden;" />
             </div>
         </div>
     </div>
@@ -248,6 +252,7 @@
         <div class="col-md-6 text-with-padding">
             <h1 class="lang-bih">DJELATNOSTI</h1>
             <h1 class="lang-eng">FIELDS OF EXPERTISE</h1>
+            <h1 class="lang-deu">FACHGEBIETE</h1>
             <br />
             <div style="text-align: left; margin-left: 10%;">
                 <ul class="lang-bih">
@@ -367,7 +372,7 @@
             <span>
                 <strong class="lang-bih">Kontaktirajte nas:</strong>
                 <strong class="lang-eng">Contact us:</strong>
-                <strong class="lang-deu">Kontaktiere uns:</strong>
+                <strong class="lang-deu">Kontaktieren sie uns:</strong>
             </span>
             <br />
             <?php
@@ -389,7 +394,7 @@
 			<?php
 				} else {
 			?>
-            <form action="Home.php#divKontakt" method="post">
+            <form id="frmContact" action="Home.php?lang=1#divKontakt" method="post">
                 <input id="txtName" name="txtName" type="text" class="form-control" placeholder="Ime i prezime" />
                 <input id="txtEmail" name="txtEmail" type="email" class="form-control" placeholder="Email adresa" />
                 <input id="txtPhone" name="txtPhone" type="text" class="form-control" placeholder="Broj telefona" />

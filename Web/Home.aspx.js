@@ -1,4 +1,8 @@
-﻿$(document).ready(function () {
+﻿/// <reference path="../scripts/Utilities.js" />
+
+var lang = 1;
+
+$(document).ready(function () {
     $("#lightSlider").lightSlider({
         item: 1,
         autoWidth: false,
@@ -53,38 +57,79 @@
     if (menuLoc < 0)
         menuLoc = 0;
     $("#ulMenu").css("left", menuLoc);
+
+
+    lang = GetQueryStringParameterByName("lang");
+    if (lang != undefined && lang != null)
+        SetLang(parseInt(lang));
+
+    $(".menu-item").removeClass("current_menu");
+    $(".aPocetna").addClass("current_menu").focus();
 });
 
+var scrollingToDiv = false;
 function ScrollToDiv(divId) {
+    scrollingToDiv = true;
+
+    var aLink = divId.replace("div", "a");
+    $(".menu-item").removeClass("current_menu");
+    if (aLink == "divMensud" || aLink == "divMersad" || aLink == "divJasmina")
+        aLink = "aClanovi";
+    $("." + aLink).addClass("current_menu").focus();
+
+
     $("#bs-sidebar-navbar-collapse-1").removeClass("in");
 
     $('html,body').animate({
         scrollTop: $("#" + divId).offset().top
     }, 'slow');
+
+    if (Math.abs($(document).scrollTop() - $("#" + divId).offset().top) > $(window).height()) {
+        $("#" + divId).find("div.img-fit").hide();
+
+        var _direction = "right";
+        if (divId == "divMensud" || divId == "divJasmina" || divId == "divSrebrenica")
+            _direction = "left"
+
+        $("#" + divId).find("div.img-fit:visible").show("slide", { direction: _direction }, 700);
+    }
+    setTimeout(function () {
+        scrollingToDiv = false;
+    }, 500);
 }
 
 function ScrollToTop() {
+    scrollingToDiv = true;
+
     $("#bs-sidebar-navbar-collapse-1").removeClass("in");
+
+    $(".menu-item").removeClass("current_menu");
+    $(".aPocetna").addClass("current_menu").focus();
+
 
     $('html,body').animate({
         scrollTop: 0
     }, 'slow');
+
+    setTimeout(function () {
+        scrollingToDiv = false;
+    }, 500);
 }
 
-$(document).scroll(function () {
-    //if ($(document).scrollTop() > 50) {
-    //    $("#imgLogoXS").hide();
-    //}
-    //else {
-    //    $("#imgLogoXS").slideDown();
-    //}
+var divODrustvuSlided = false;
+var divMensudSlided = false;
+var divMersadSlided = false;
+var divJasminaSlided = false;
+var divDjelatnostiSlided = false;
+var divSrebrenicaSlided = false;
+var divKontaktSlided = false;
 
+$(document).scroll(function () {
     var tempMarginTopLogo = -50 - $(document).scrollTop();
     if (tempMarginTopLogo < -154)
         tempMarginTopLogo = -154;
 
-    $("#imgLogoDesktop").css("margin-top", tempMarginTopLogo.toString() + "px");
-
+    $(".imgLogoDesktop").css("margin-top", tempMarginTopLogo.toString() + "px");
 
     var tempMarginTopNavBar = -$(document).scrollTop();
     if (tempMarginTopNavBar < -50)
@@ -99,8 +144,97 @@ $(document).scroll(function () {
     if (tempMarginTopLogoMob < -154)
         tempMarginTopLogoMob = -154;
 
-    $("#imgLogoXS").css("margin-top", tempMarginTopLogoMob.toString() + "px");
+    $(".imgLogoXS").css("margin-top", tempMarginTopLogoMob.toString() + "px");
+
+    Scroll();
 });
+
+function Scroll() {
+    var screenTop = $(document).scrollTop();
+    var screenBottom = $(document).scrollTop() + $(window).height();
+
+    if (screenTop == 0 && !scrollingToDiv) {
+        $(".menu-item").removeClass("current_menu");
+        $(".aPocetna").addClass("current_menu").focus();
+    }
+
+    if (!divODrustvuSlided && !scrollingToDiv && screenBottom >= $("#divODrustvu").offset().top && screenTop <= ($("#divODrustvu").offset().top + $("#divODrustvu").height())) {
+        divODrustvuSlided = true;
+        $("#divODrustvu").find("div.img-fit").hide();
+        $("#divODrustvu").find("div.img-fit").show("slide", { direction: "right" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aODrustvu").addClass("current_menu").focus();
+    }
+    else if (divODrustvuSlided && (screenBottom < $("#divODrustvu").offset().top || screenTop > ($("#divODrustvu").offset().top + $("#divODrustvu").height())))
+        divODrustvuSlided = false;
+
+    if (!divMensudSlided && !scrollingToDiv && screenBottom >= $("#divMensud").offset().top && screenTop <= ($("#divMensud").offset().top + $("#divMensud").height())) {
+        divMensudSlided = true;
+        $("#divMensud").find("div.img-fit").hide();
+        $("#divMensud").find("div.img-fit").show("slide", { direction: "left" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aClanovi").addClass("current_menu").focus();
+    }
+    else if (divMensudSlided && (screenBottom < $("#divMensud").offset().top || screenTop > ($("#divMensud").offset().top + $("#divODrustvu").height())))
+        divMensudSlided = false;
+
+    if (!divMersadSlided && !scrollingToDiv && screenBottom >= $("#divMersad").offset().top && screenTop <= ($("#divMersad").offset().top + $("#divMersad").height())) {
+        divMersadSlided = true;
+        $("#divMersad").find("div.img-fit").hide();
+        $("#divMersad").find("div.img-fit").show("slide", { direction: "right" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aClanovi").addClass("current_menu").focus();
+    }
+    else if (divMersadSlided && (screenBottom < $("#divMersad").offset().top || screenTop > ($("#divMersad").offset().top + $("#divODrustvu").height())))
+        divMersadSlided = false;
+
+    if (!divJasminaSlided && !scrollingToDiv && screenBottom >= $("#divJasmina").offset().top && screenTop <= ($("#divJasmina").offset().top + $("#divJasmina").height())) {
+        divJasminaSlided = true;
+        $("#divJasmina").find("div.img-fit").hide();
+        $("#divJasmina").find("div.img-fit").show("slide", { direction: "left" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aClanovi").addClass("current_menu").focus();
+    }
+    else if (divJasminaSlided && (screenBottom < $("#divJasmina").offset().top || screenTop > ($("#divJasmina").offset().top + $("#divJasmina").height())))
+        divJasminaSlided = false;
+
+    if (!divDjelatnostiSlided && !scrollingToDiv && screenBottom >= $("#divDjelatnosti").offset().top && screenTop <= ($("#divDjelatnosti").offset().top + $("#divDjelatnosti").height())) {
+        divDjelatnostiSlided = true;
+        $("#divDjelatnosti").find("div.img-fit").hide();
+        $("#divDjelatnosti").find("div.img-fit").show("slide", { direction: "right" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aDjelatnosti").addClass("current_menu").focus();
+    }
+    else if (divDjelatnostiSlided && (screenBottom < $("#divDjelatnosti").offset().top || screenTop > ($("#divDjelatnosti").offset().top + $("#divODrustvu").height())))
+        divDjelatnostiSlided = false;
+
+    if (!divSrebrenicaSlided && !scrollingToDiv && screenBottom >= $("#divSrebrenica").offset().top && screenTop <= ($("#divSrebrenica").offset().top + $("#divSrebrenica").height())) {
+        divSrebrenicaSlided = true;
+        $("#divSrebrenica").find("div.img-fit").hide();
+        $("#divSrebrenica").find("div.img-fit").show("slide", { direction: "left" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aSrebrenica").addClass("current_menu").focus();
+    }
+    else if (divSrebrenicaSlided && (screenBottom < $("#divSrebrenica").offset().top || screenTop > ($("#divSrebrenica").offset().top + $("#divSrebrenica").height())))
+        divSrebrenicaSlided = false;
+
+    if (!divKontaktSlided && !scrollingToDiv && screenBottom >= $("#divKontakt").offset().top && screenTop <= ($("#divKontakt").offset().top + $("#divKontakt").height())) {
+        divKontaktSlided = true;
+        $("#divKontakt").find("div.img-fit").hide();
+        $("#divKontakt").find("div.img-fit").show("slide", { direction: "right" }, 700);
+
+        $(".menu-item").removeClass("current_menu");
+        $(".aKontakt").addClass("current_menu").focus();
+    }
+    else if (divKontaktSlided && (screenBottom < $("#divKontakt").offset().top || screenTop > ($("#divKontakt").offset().top + $("#divKontakt").height())))
+        divKontaktSlided = false;
+}
 
 function ToggleMobLogo() {
     var tempMarginTopLogoMob = -$(document).scrollTop();
@@ -108,9 +242,9 @@ function ToggleMobLogo() {
         tempMarginTopLogoMob = -154;
 
     if ($("#bs-sidebar-navbar-collapse-1").hasClass("in"))
-        $("#imgLogoXS").css("margin-top", tempMarginTopLogoMob.toString() + "px");
+        $(".imgLogoXS").css("margin-top", tempMarginTopLogoMob.toString() + "px");
     else
-        $("#imgLogoXS").css("margin-top", "-" + $("#navBar").height().toString() + "px");
+        $(".imgLogoXS").css("margin-top", "-" + $("#navBar").height().toString() + "px");
 
 }
 
@@ -131,6 +265,8 @@ $(".djelatnost").on("click", function () {
 });
 
 function SetLang(langNo) {
+    $("#frmContact").attr("action", "Home.php?lang=" + langNo.toString() + "#divKontakt");
+
     switch (langNo) {
         case 1:
             // bih
@@ -170,8 +306,8 @@ function SetLang(langNo) {
             break;
     }
 
-
     // other setup
     $("#divDjelatnostiDetails").html("");
     $("#bs-sidebar-navbar-collapse-1").removeClass("in");
 }
+
