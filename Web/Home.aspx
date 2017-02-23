@@ -13,18 +13,30 @@
 
     <link rel="stylesheet" href="Libraries/Bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="Libraries/jQuery/jquery-ui.min.css" />
-    <link rel="stylesheet" href="Styles/NewStyle.css?v=5" />
+    <link rel="stylesheet" href="Styles/NewStyle.css" />
     <script type="text/javascript" src="Libraries/jQuery/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="Libraries/jQuery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="Libraries/Bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="Scripts/Utilities.js"></script>
-    <script type="text/javascript" src="Home.aspx.js?v=9" defer="defer"></script>
+    <script type="text/javascript" src="Home.aspx.js" defer="defer"></script>
 
     <link type="text/css" rel="stylesheet" href="Libraries/lightSlider/lightslider.css" />
     <script src="Libraries/lightSlider/lightslider.js"></script>
 </head>
 <body>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-92522311-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
     <div class="visible-xs">
         <img class="img-responsive imgLogoXS lang-bih" src="Images/logo_bih.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
         <img class="img-responsive imgLogoXS lang-eng" src="Images/logo_eng.jpg" onclick="ScrollToTop(); return false;" alt="Logo" style="cursor: pointer; max-width: 180px; position: absolute; margin-left: 10px; margin-top: 0px; z-index: 1000; position: fixed;" />
